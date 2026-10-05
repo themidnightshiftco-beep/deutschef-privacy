@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik politikası – Deutschef</title>
+<meta name="description" content="Deutschef uygulamasının gizlilik politikası.">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --ink: #17191a;
+    --soft: #55595c;
+    --line: #dcd9d0;
+    --gold: #c89b2c;
+    --link: #7d5f10;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151718;
+      --ink: #f1efe9;
+      --soft: #a8adb0;
+      --line: #2f3436;
+      --gold: #d9ae3c;
+      --link: #e3b94a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  main {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 4rem;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: 2.5rem 0 0.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+  p, ul { margin: 0.75rem 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.4rem 0; }
+  .meta { color: var(--soft); margin: 0 0 2rem; }
+  .summary {
+    border-left: 3px solid var(--gold);
+    padding: 0.25rem 0 0.25rem 1rem;
+    margin: 0 0 1rem;
+  }
+  a { color: var(--link); text-underline-offset: 0.15em; }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 2px; }
+  footer { margin-top: 3rem; color: var(--soft); font-size: 0.9375rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Gizlilik politikası</h1>
+<p class="meta">Deutschef · Son güncelleme: 5 Ekim 2026</p>
+
+<p class="summary">Deutschef'i hesap açmadan kullanırsanız ilerlemeniz yalnızca cihazınızda kalır. Hesap açarsanız öğrenme ilerlemeniz hesabınıza bağlı olarak buluta kaydedilir, böylece telefon değiştirdiğinizde kaybolmaz. Reklam göstermiyoruz, davranışınızı izlemiyoruz ve verilerinizi satmıyoruz.</p>
+
+<h2>Uygulama ve geliştirici</h2>
+<p>Deutschef, Almanya'da mutfakta çalışmak isteyenlere gastronomi Almancası öğreten bir mobil uygulamadır. Geliştirici ve veri sorumlusu: Ömer Yavuz (TheMidnightShiftCo).</p>
+
+<h2>Misafir olarak kullanım</h2>
+<p>Hesap açmadan kullanırsanız:</p>
+<ul>
+  <li>Sunucuda hesap oluşturulmaz.</li>
+  <li>İlerlemeniz, tercihleriniz ve oyun skorlarınız yalnızca cihazınızda saklanır.</li>
+  <li>Uygulamayı silerseniz bu veriler de silinir.</li>
+</ul>
+
+<h2>Hesap açarsanız</h2>
+<p>İki giriş yöntemi sunuyoruz: e-posta ve şifre, ya da Apple ile giriş. İşlenen bilgiler:</p>
+<ul>
+  <li><strong>E-posta ile:</strong> e-posta adresiniz, şifreniz ve isteğe bağlı olarak girdiğiniz görünen ad. Şifre, Firebase Authentication'da korunmuş biçimde saklanır; geliştirici olarak şifrenizi göremem.</li>
+  <li><strong>Apple ile:</strong> Apple'ın uygulamayla paylaştığı benzersiz kimlik ve e-posta adresi. Apple'ın "E-postamı gizle" seçeneğini kullanırsanız gerçek adresiniz bize ulaşmaz. Uygulama, Apple hesabınızdaki adı istemez.</li>
+  <li><strong>Her iki durumda:</strong> hesabınıza atanan rastgele bir kullanıcı kimliği.</li>
+</ul>
+
+<h2>Öğrenme ilerlemeniz</h2>
+<p>Hesapla giriş yaptığınızda ilerlemeniz, Google Firebase'in veritabanında (Cloud Firestore) kullanıcı kimliğinize bağlı olarak saklanır:</p>
+<ul>
+  <li>seçtiğiniz, öğrendiğiniz ve bildiğiniz kelimeler,</li>
+  <li>doğru ve yanlış cevap sayaçları,</li>
+  <li>günlük özet ve seri bilgisi,</li>
+  <li>son güncelleme zamanı.</li>
+</ul>
+<p>E-posta adresiniz ve adınız bu kayıtta yer almaz. Erişim kuralları, bu kaydın yalnızca hesap sahibi tarafından okunup yazılabilmesi için yapılandırılmıştır.</p>
+
+<h2>Geri bildirim</h2>
+<p>Geri bildirim formunu kullanırsanız şunlar kaydedilir: yazdığınız metin, konu seçiminiz (hata, öneri, diğer), uygulama sürümü, platform ve işletim sistemi sürümü, arayüz dili ve gönderim zamanı. Hesapla girişliyseniz kullanıcı kimliğiniz de eklenir; misafirseniz eklenmez. Formu kullanmak yerine bize e-posta da yazabilirsiniz. Mesajınıza kişisel bilgi yazmamanızı öneririz.</p>
+
+<h2>Abonelik ve satın alma</h2>
+<p>Deutschef'in bazı bölümleri Pro aboneliğiyle açılır. Satın alma Apple üzerinden yapılır; kart ve ödeme bilgilerinizi Apple işler, bize ulaşmaz.</p>
+<p>Aboneliğinizi doğrulamak ve geri yüklemek için RevenueCat hizmetini kullanıyoruz. RevenueCat'e satın alma kaydınız ve bir kullanıcı kimliği gönderilir: hesapla girişliyseniz hesap kimliğiniz, misafirseniz rastgele bir anonim kimlik. RevenueCat, teknik gereklilik olarak IP adresi, uygulama ve işletim sistemi sürümü gibi bağlantı bilgilerini de işleyebilir. E-posta adresiniz ve adınız RevenueCat'e gönderilmez.</p>
+
+<h2>Bildirimler</h2>
+<p>Günlük hatırlatma isteğe bağlıdır ve varsayılan olarak kapalıdır. Açtığınızda uygulama bildirim izni ister. Hatırlatmalar tamamen cihazınızda zamanlanır; bir sunucuya cihaz bilgisi gönderilmez.</p>
+
+<h2>Cihazınızda saklananlar</h2>
+<p>Tema, dil, oyun seviyeleri ve skorlar, hatırlatma ayarı ve tanıtım turunun görülüp görülmediği gibi tercihler cihazınızda saklanır.</p>
+<p>Uygulama, internet bağlantınız olup olmadığını anlamak için Google'ın bir bağlantı kontrol adresine istek gönderebilir. Bu istek kişisel veri taşımaz, ancak IP adresiniz Google tarafından görülebilir.</p>
+
+<h2>Kullanmadıklarımız</h2>
+<p>Reklam göstermiyoruz. Firebase Analytics dahil hiçbir analitik, davranış izleme ya da kilitlenme raporlama aracı kullanmıyoruz. Verilerinizi başka şirketlerin sizi izlemesi veya size reklam göstermesi için paylaşmıyor, satmıyoruz.</p>
+
+<h2>Verileri işleyen hizmetler</h2>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy">Google Firebase</a>: hesap girişi ve ilerleme kaydı (Authentication, Cloud Firestore)</li>
+  <li><a href="https://www.revenuecat.com/privacy">RevenueCat</a>: abonelik doğrulama</li>
+  <li><a href="https://www.apple.com/legal/privacy/">Apple</a>: Apple ile giriş ve ödeme</li>
+</ul>
+<p>Bu hizmetler verileri bulunduğunuz ülkenin dışında, örneğin Amerika Birleşik Devletleri'nde işleyebilir.</p>
+
+<h2>Saklama ve silme</h2>
+<ul>
+  <li>Hesabınız olduğu sürece ilerlemeniz saklanır. Uygulamadaki “Hesabı sil” seçeneğiyle hesabınızı ve bulutta kayıtlı ilerlemenizi silebilirsiniz.</li>
+  <li>Hesabı silmek aboneliğinizi iptal etmez. Aboneliği App Store hesap ayarlarınızdan ayrıca iptal etmeniz gerekir.</li>
+  <li>Cihazınızdaki verileri silmek için uygulamayı kaldırmanız yeterlidir.</li>
+  <li>Geri bildirimler hesap silindiğinde otomatik silinmez. Silinmesini isterseniz aşağıdaki adrese yazın, silelim.</li>
+  <li>Apple ve RevenueCat'in kendi sistemlerindeki kayıtlar, o şirketlerin politikalarına tabidir.</li>
+</ul>
+
+<h2>Çocuklar</h2>
+<p>Deutschef çocuklara yönelik değildir.</p>
+
+<h2>Haklarınız</h2>
+<p>6698 sayılı KVKK ve, Avrupa Birliği'nde ya da Almanya'da yaşıyorsanız GDPR kapsamında şu haklara sahipsiniz: verilerinize erişme, düzeltme, silme, işlenmesini kısıtlama, işlenmesine itiraz etme ve verilerinizi taşıma. Başvurmak için aşağıdaki adrese yazmanız yeterlidir. Ayrıca bulunduğunuz ülkedeki veri koruma otoritesine şikâyet etme hakkınız vardır.</p>
+
+<h2>Değişiklikler</h2>
+<p>Bu politika güncellenebilir. Önemli bir değişiklik olduğunda bu sayfada yayınlanır ve yukarıdaki “Son güncelleme” tarihi değişir.</p>
+
+<h2>İletişim</h2>
+<p>Gizlilik ve veri talepleri için: <a href="mailto:info@themidnightshiftco.com">info@themidnightshiftco.com</a></p>
+
+<footer>© 2026 Deutschef · Ömer Yavuz</footer>
+
+</main>
+</body>
+</html>
